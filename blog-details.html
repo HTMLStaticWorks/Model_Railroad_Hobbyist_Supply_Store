@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Details - Model Railroad & Hobbyist Supply Store</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .page-header {
-      padding: 10rem 0 5rem;
-      background: var(--bg-surface);
+      padding: 13rem 0 8rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/blog-hero.png') center/cover no-repeat;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
+
     .article-content {
-      max-width: 800px;
+      max-width: 1100px;
       margin: 0 auto;
     }
+
     .article-content img {
       width: 100%;
       border-radius: var(--radius-lg);
       margin: 2rem 0;
     }
+
     .article-content p {
       margin-bottom: 1.5rem;
       font-size: 1.125rem;
       color: var(--text-light);
     }
+
     .article-content h3 {
       margin-top: 3rem;
     }
+
+    .article-intro {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .article-intro img {
+      width: 40% !important;
+      max-width: 500px !important;
+      margin: 0 !important;
+      border-radius: var(--radius-md) !important;
+      box-shadow: var(--shadow-md);
+    }
+
+    .article-intro p {
+      margin: 0;
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .article-intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .article-intro img {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1.5rem !important;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -41,7 +83,7 @@
         <i class="fas fa-train"></i>
         <span>ModelRail</span>
       </a>
-      
+
       <button class="mobile-toggle" aria-label="Toggle Menu">
         <i class="fas fa-bars"></i>
       </button>
@@ -51,19 +93,21 @@
         <li><a href="home-2.html" class="nav-link">Home 2</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="blog.html" class="nav-link" style="color: var(--primary)">Blog</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
         <li><a href="pricing.html" class="nav-link">Pricing</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
-        
+
         <li class="nav-actions">
           <button class="theme-toggle" aria-label="Toggle Dark Mode">
             <i class="fas fa-moon"></i>
           </button>
           <button class="rtl-toggle" aria-label="Toggle RTL">
-            <i class="fas fa-language"></i>
+            <i class="fas fa-exchange-alt"></i>
           </button>
+          <a href="cart.html" class="cart-toggle" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           <a href="login.html" class="btn btn-outline">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -74,8 +118,10 @@
     <div class="container">
       <div style="max-width: 800px; margin: 0 auto;">
         <span style="color: var(--primary); font-weight: 600; text-transform: uppercase;">Tutorials</span>
-        <h1 class="hero-title" style="color: var(--text-dark); margin: 1rem 0; font-size: 3rem;">Creating Realistic Water Features</h1>
-        <p class="section-subtitle">By John Smith &bull; October 15, 2026</p>
+        <h1 id="article-title" class="hero-title" style="color: #ffffff; margin: 1rem 0; font-size: 3rem;">
+          Creating Realistic
+          Water Features</h1>
+        <p id="article-date" class="section-subtitle" style="color: #e2e8f0;">By John Smith &bull; October 15, 2026</p>
       </div>
     </div>
   </header>
@@ -84,32 +130,48 @@
   <section class="section">
     <div class="container">
       <div class="article-content">
-        <img src="assets/images/hero_image.png" alt="River Setup">
-        <p>Adding a water feature to your model railroad is one of the most effective ways to break up the landscape and add a level of realism that draws the viewer's eye. Whether it's a roaring river, a calm lake, or a small pond, the techniques remain largely the same.</p>
-        
-        <h3>1. Preparing the Base</h3>
-        <p>Before you even think about pouring resin, the base must be absolutely sealed. Even a pinhole will allow expensive epoxy to drain away onto your floor. We recommend using a layer of plaster cloth covered by a thick coat of latex paint.</p>
+        <div class="article-intro">
+          <img id="intro-img" src="assets/images/hero_image.png" alt="Article Image">
+          <div>
+            <h3 id="intro-title" style="margin-top: 0; margin-bottom: 1rem;">1. Preparing the Base</h3>
+            <p id="intro-text">Adding a water feature to your model railroad is one of the most effective ways to break
+              up the landscape
+              and add a level of realism that draws the viewer's eye. Whether it's a roaring river, a calm lake, or a
+              small pond, the techniques remain largely the same. Itâ€™s not just about the water itself, but how it
+              interacts with the surrounding terrainâ€”the damp earth at the edges, the moss on the rocks, and the way
+              light
+              refracts through the surface. Taking the time to plan your water placement can transform a static layout
+              into a living, breathing miniature world that tells a story of nature and engineering.</p>
+          </div>
+        </div>
 
-        <img src="assets/images/layout_2.png" alt="Bridge over water">
 
-        <h3>2. Painting the Depth</h3>
-        <p>Water isn't just blue. It reflects the sky and the surrounding terrain. To create the illusion of depth, paint the center of your riverbed a dark blue-green or brown, and gradually lighten the color as you approach the banks. This simple trick adds tremendous realism once the clear resin is applied.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Section 2: Author Bio -->
-  <section class="section section-bg">
-    <div class="container">
-      <div class="article-content" style="display: flex; gap: 2rem; align-items: center; background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border);">
-        <img src="https://ui-avatars.com/api/?name=John+Smith&background=d32f2f&color=fff&size=100" alt="Author" style="width: 100px; height: 100px; border-radius: 50%; margin: 0;">
-        <div>
-          <h3 style="margin-top: 0; margin-bottom: 0.5rem;">John Smith</h3>
-          <p style="margin: 0; font-size: 1rem;">Master Modeler with over 30 years of experience building award-winning layouts.</p>
+        <div class="article-intro">
+          <img id="section2-img" src="assets/images/layout_2.png" alt="Article Image">
+          <div>
+            <h3 id="section2-title" style="margin-top: 0; margin-bottom: 1rem;">2. Painting the Depth</h3>
+            <p id="section2-text">Water isn't just blue. It reflects the sky and the surrounding terrain. To create the
+              illusion of depth,
+              paint the center of your riverbed a dark blue-green or brown, and gradually lighten the color as you
+              approach the banks. This simple trick adds tremendous realism once the clear resin is applied.To enhance
+              the natural appearance even further,
+              add subtle variations in color and texture throughout the riverbed.
+              Small details like rocks, sand patches, and underwater vegetation can make the scene feel far more
+              realistic.
+              Use gentle brush strokes to blend the darker and lighter shades smoothly for a natural water transition
+              effect.
+              Around the edges, add muddy tones or mossy green highlights to imitate real shoreline conditions.
+              Reflections and shadow effects near bridges or trees can also create additional depth and visual interest.
+              Once the resin cures, these layered painting techniques will give your water feature a stunning lifelike
+              finish.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- Section 3: Comments -->
   <section class="section">
@@ -137,47 +199,41 @@
       <div class="grid-4" style="margin-top: 2rem;">
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/miniature_2.png" alt="Blog" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body" style="text-align: center;">
             <h3 class="card-title">DIY Pine Trees</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+            <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=pine-trees"
+                class="btn btn-outline">Read More</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/tools_2.png" alt="Blog" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body" style="text-align: center;">
             <h3 class="card-title">Airbrushing Basics</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+            <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=airbrushing"
+                class="btn btn-outline">Read More</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/layout_1.png" alt="Blog" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body" style="text-align: center;">
             <h3 class="card-title">Building Cityscapes</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+            <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=water-features"
+                class="btn btn-outline">Read More</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/tools_1.png" alt="Blog" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body" style="text-align: center;">
             <h3 class="card-title">Essential Tools Guide</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+            <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=airbrushing"
+                class="btn btn-outline">Read More</a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 5: Newsletter -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="section-title" style="margin-bottom: 1.5rem;">Never Miss an Update</h2>
-      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Subscribe to our newsletter for weekly tips.</p>
-      <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem;">
-        <input type="email" class="form-control" placeholder="Your Email Address" required style="border:none;">
-        <button type="submit" class="btn btn-primary" style="background-color: var(--nav-bg); color: var(--primary);">Subscribe</button>
-      </form>
-    </div>
-  </section>
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -188,15 +244,16 @@
             <i class="fas fa-train"></i>
             <span>ModelRail</span>
           </a>
-          <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
+          <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams
+            one scale at a time.</p>
           <div class="social-links" style="margin-top: 1.5rem;">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-        
+
         <div class="footer-links-col">
           <h3 class="footer-title">Quick Links</h3>
           <ul class="footer-links">
@@ -206,7 +263,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-links-col">
           <h3 class="footer-title">Features</h3>
           <ul class="footer-links">
@@ -216,17 +273,18 @@
             <li><a href="pricing.html">Club Membership</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-contact">
           <h3 class="footer-title">Contact Info</h3>
           <ul class="footer-links">
-            <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Hobby Lane, Train City, TC 12345</li>
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Hobby Lane, Train City, TC 12345
+            </li>
             <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
             <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@modelrail.com</li>
           </ul>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>&copy; 2026 Model Railroad & Hobbyist Supply Store. All rights reserved.</p>
       </div>
@@ -234,5 +292,79 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    const blogData = {
+      'water-features': {
+        title: "Creating Realistic Water Features",
+        date: "By John Smith &bull; October 15, 2026",
+        introImg: "assets/images/hero_image.png",
+        introTitle: "1. Preparing the Base",
+        introText: "Adding a water feature to your model railroad is one of the most effective ways to break up the landscape and add a level of realism that draws the viewer's eye. Whether it's a roaring river, a calm lake, or a small pond, the techniques remain largely the same. Itâ€™s not just about the water itself, but how it interacts with the surrounding terrainâ€”the damp earth at the edges, the moss on the rocks, and the way light refracts through the surface.",
+        section2Img: "assets/images/layout_2.png",
+        section2Title: "2. Painting the Depth",
+        section2Text: "Water isn't just blue. It reflects the sky and the surrounding terrain. To create the illusion of depth, paint the center of your riverbed a dark blue-green or brown, and gradually lighten the color as you approach the banks. This simple trick adds tremendous realism once the clear resin is applied."
+      },
+      'bullet-train': {
+        title: "Review: New Bullet Train Models",
+        date: "By Sarah Jenkins &bull; October 12, 2026",
+        introImg: "assets/images/train_2.png",
+        introTitle: "The Future of Speed",
+        introText: "The latest N scale bullet train models have arrived, and they are more detailed than ever. From the aerodynamic nose to the intricate bogies, these models capture the essence of modern rail travel. We tested several models for speed consistency and noise levels.",
+        section2Img: "assets/images/layout_1.png",
+        section2Title: "Performance Testing",
+        section2Text: "On the track, these models perform flawlessly. The smooth motor and reliable electrical pickup ensure consistent speeds even on steep gradients. The interior lighting is also a nice touch that adds to the realism during night operations."
+      },
+      'pine-trees': {
+        title: "DIY Pine Trees on a Budget",
+        date: "By Mike Ross &bull; October 05, 2026",
+        introImg: "assets/images/miniature_2.png",
+        introTitle: "Building the Structure",
+        introText: "Creating realistic pine trees doesn't have to be expensive. By using simple materials like wire and twine, you can create a forest for just a few dollars. The process is meditative and yields results that often look better than store-bought options.",
+        section2Img: "assets/images/hero_image.png",
+        section2Title: "Adding the Foliage",
+        section2Text: "The key to realism is in the flocking. Use multiple shades of green to simulate the way light hits the needles at different angles. A final spray of matte fixative ensures that your forest stays vibrant and doesn't shed over time."
+      },
+      'airbrushing': {
+        title: "Airbrushing Basics Part 1",
+        date: "By David Miller &bull; September 28, 2026",
+        introImg: "assets/images/tools_2.png",
+        introTitle: "Choosing Your Equipment",
+        introText: "An airbrush is an essential tool for any serious modeler. In this part, we discuss the differences between single and double action brushes, and why investing in a good compressor is just as important as the brush itself.",
+        section2Img: "assets/images/tools_1.png",
+        section2Title: "Thinning Your Paint",
+        section2Text: "The most common mistake beginners make is using paint that is too thick. We'll show you the perfect ratio for smooth, even coverage and how to avoid the dreaded 'orange peel' effect on your models."
+      },
+      'bridge-building': {
+        title: "Bridge Building Kit Bash",
+        date: "By Alex Thompson &bull; September 20, 2026",
+        introImg: "assets/images/layout_2.png",
+        introTitle: "Planning the Kit Bash",
+        introText: "Kit bashing allows you to create unique structures that don't come straight out of a box. Here, we combine two truss bridge kits to span a wide river gorge, focusing on how to seamlessly blend the joints for a professional look.",
+        section2Img: "assets/images/layout_1.png",
+        section2Title: "Structural Reinforcement",
+        section2Text: "Ensuring your bridge can handle the weight of heavy locomotives is crucial. We'll walk you through the process of adding hidden supports and using high-strength adhesives that won't compromise the aesthetic of the bridge."
+      }
+    };
+
+    function updateContent() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = urlParams.get('article');
+
+      if (articleId && blogData[articleId]) {
+        const data = blogData[articleId];
+        document.getElementById('article-title').innerText = data.title;
+        document.getElementById('article-date').innerHTML = data.date;
+        document.getElementById('intro-img').src = data.introImg;
+        document.getElementById('intro-title').innerText = data.introTitle;
+        document.getElementById('intro-text').innerText = data.introText;
+        document.getElementById('section2-img').src = data.section2Img;
+        document.getElementById('section2-title').innerText = data.section2Title;
+        document.getElementById('section2-text').innerText = data.section2Text;
+      }
+    }
+
+    window.onload = updateContent;
+  </script>
 </body>
+
 </html>

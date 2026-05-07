@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog - Model Railroad & Hobbyist Supply Store</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .page-header {
-      padding: 10rem 0 5rem;
-      background: var(--bg-surface);
+      padding: 13rem 0 8rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/blog-hero.png') center/cover no-repeat;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -34,7 +35,7 @@
         <li><a href="home-2.html" class="nav-link">Home 2</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="blog.html" class="nav-link" style="color: var(--primary)">Blog</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
         <li><a href="pricing.html" class="nav-link">Pricing</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
         
@@ -43,10 +44,12 @@
             <i class="fas fa-moon"></i>
           </button>
           <button class="rtl-toggle" aria-label="Toggle RTL">
-            <i class="fas fa-language"></i>
+            <i class="fas fa-exchange-alt"></i>
           </button>
+          <a href="cart.html" class="cart-toggle" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           <a href="login.html" class="btn btn-outline">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -55,8 +58,8 @@
   <!-- Page Header -->
   <header class="page-header">
     <div class="container">
-      <h1 class="hero-title" style="color: var(--text-dark);">Hobbyist Blog</h1>
-      <p class="section-subtitle">Tips, tutorials, and news from the model railroading world.</p>
+      <h1 class="hero-title" style="color: #ffffff;">Hobbyist Blog</h1>
+      <p class="section-subtitle" style="color: #e2e8f0;">Tips, tutorials, and news from the model railroading world.</p>
     </div>
   </header>
 
@@ -71,7 +74,7 @@
           <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.875rem;">Featured</span>
           <h2 class="section-title" style="margin-top: 0.5rem; font-size: 2rem;">Creating Realistic Water Features for Your Layout</h2>
           <p style="margin-top:1rem; margin-bottom:1rem; color:var(--text-light);">Learn the secrets to pouring epoxy resin for rivers and lakes, creating ripples, and blending the shoreline into your existing scenery.</p>
-          <a href="blog-details.html" class="btn btn-primary">Read Article</a>
+          <a href="blog-details.html?article=water-features" class="btn btn-primary">Read Article</a>
         </div>
       </div>
     </div>
@@ -90,7 +93,7 @@
             <span style="color: var(--text-light); font-size: 0.875rem;">Oct 12, 2026</span>
             <h3 class="card-title" style="margin-top: 0.5rem;">Review: New Bullet Train Models</h3>
             <p class="card-text">We test the latest high-speed N scale models for performance and detail.</p>
-            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+             <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=bullet-train" class="btn btn-outline">Read More</a></div>
           </div>
         </div>
         <div class="card">
@@ -99,7 +102,7 @@
             <span style="color: var(--text-light); font-size: 0.875rem;">Oct 05, 2026</span>
             <h3 class="card-title" style="margin-top: 0.5rem;">DIY Pine Trees on a Budget</h3>
             <p class="card-text">Make your own realistic pine trees using wire, twine, and flocking.</p>
-            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+             <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=pine-trees" class="btn btn-outline">Read More</a></div>
           </div>
         </div>
         <div class="card">
@@ -108,7 +111,7 @@
             <span style="color: var(--text-light); font-size: 0.875rem;">Sep 28, 2026</span>
             <h3 class="card-title" style="margin-top: 0.5rem;">Airbrushing Basics Part 1</h3>
             <p class="card-text">Getting started with weathering your rolling stock.</p>
-            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+             <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=airbrushing" class="btn btn-outline">Read More</a></div>
           </div>
         </div>
         <div class="card">
@@ -117,7 +120,7 @@
             <span style="color: var(--text-light); font-size: 0.875rem;">Sep 20, 2026</span>
             <h3 class="card-title" style="margin-top: 0.5rem;">Bridge Building Kit Bash</h3>
             <p class="card-text">Combining two kits to create a massive river crossing.</p>
-            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+             <div class="card-footer" style="justify-content: center;"><a href="blog-details.html?article=bridge-building" class="btn btn-outline">Read More</a></div>
           </div>
         </div>
       </div>
@@ -163,14 +166,7 @@
     </div>
   </section>
 
-  <!-- Section 5: Unique Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="section-title" style="margin-bottom: 1.5rem;">Submit Your Layout</h2>
-      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Want to see your hard work featured on our blog? Send us pictures and the story behind your model railroad!</p>
-      <a href="contact.html" class="btn btn-primary" style="background-color: #fff; color: var(--primary);">Submit Photos</a>
-    </div>
-  </section>
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -184,7 +180,7 @@
           <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
           <div class="social-links" style="margin-top: 1.5rem;">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>

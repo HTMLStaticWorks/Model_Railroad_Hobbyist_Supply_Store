@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services & Products - Model Railroad & Hobbyist Supply Store</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .page-header {
-      padding: 10rem 0 5rem;
-      background: var(--bg-surface);
+      padding: 13rem 0 8rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/images/service-hero.png') center/cover no-repeat;
       text-align: center;
       border-bottom: 1px solid var(--border);
+    }
+    .card-footer {
+      justify-content: center;
     }
   </style>
 </head>
@@ -33,7 +37,7 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="home-2.html" class="nav-link">Home 2</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="services.html" class="nav-link" style="color: var(--primary)">Services</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
         <li><a href="blog.html" class="nav-link">Blog</a></li>
         <li><a href="pricing.html" class="nav-link">Pricing</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -43,10 +47,12 @@
             <i class="fas fa-moon"></i>
           </button>
           <button class="rtl-toggle" aria-label="Toggle RTL">
-            <i class="fas fa-language"></i>
+            <i class="fas fa-exchange-alt"></i>
           </button>
+          <a href="cart.html" class="cart-toggle" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           <a href="login.html" class="btn btn-outline">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -55,8 +61,8 @@
   <!-- Page Header -->
   <header class="page-header">
     <div class="container">
-      <h1 class="hero-title" style="color: var(--text-dark);">Our Services & Catalog</h1>
-      <p class="section-subtitle">Everything you need to build, maintain, and enjoy your model railroad.</p>
+      <h1 class="hero-title" style="color: #ffffff;">Our Services & Catalog</h1>
+      <p class="section-subtitle" style="color: #e2e8f0;">Everything you need to build, maintain, and enjoy your model railroad.</p>
     </div>
   </header>
 
@@ -72,7 +78,7 @@
           <div class="card-body">
             <h3 class="card-title">Steam Locomotives</h3>
             <p class="card-text">Classic steam power for vintage layouts.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">View Collection</a></div>
+            <div class="card-footer"><a href="services-details.html?service=steam" class="btn btn-outline">View Collection</a></div>
           </div>
         </div>
         <div class="card">
@@ -80,7 +86,7 @@
           <div class="card-body">
             <h3 class="card-title">Electric Trains</h3>
             <p class="card-text">Modern high-speed electric locomotives.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">View Collection</a></div>
+            <div class="card-footer"><a href="services-details.html?service=electric" class="btn btn-outline">View Collection</a></div>
           </div>
         </div>
         <div class="card">
@@ -88,7 +94,7 @@
           <div class="card-body">
             <h3 class="card-title">Diesel Freights</h3>
             <p class="card-text">Heavy duty hauling power.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">View Collection</a></div>
+            <div class="card-footer"><a href="services-details.html?service=diesel" class="btn btn-outline">View Collection</a></div>
           </div>
         </div>
         <div class="card">
@@ -96,7 +102,7 @@
           <div class="card-body">
             <h3 class="card-title">Passenger Coaches</h3>
             <p class="card-text">Illuminated and detailed coach cars.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">View Collection</a></div>
+            <div class="card-footer"><a href="services-details.html?service=passenger" class="btn btn-outline">View Collection</a></div>
           </div>
         </div>
       </div>
@@ -115,7 +121,7 @@
           <div class="card-body">
             <h3 class="card-title">Buildings & Structures</h3>
             <p class="card-text">Kits and pre-assembled buildings.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">Shop Scenery</a></div>
+            <div class="card-footer"><a href="services-details.html?service=buildings" class="btn btn-outline">Shop Scenery</a></div>
           </div>
         </div>
         <div class="card">
@@ -123,7 +129,7 @@
           <div class="card-body">
             <h3 class="card-title">Trees & Foliage</h3>
             <p class="card-text">Realistic trees, bushes, and grass.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">Shop Scenery</a></div>
+            <div class="card-footer"><a href="services-details.html?service=trees" class="btn btn-outline">Shop Scenery</a></div>
           </div>
         </div>
         <div class="card">
@@ -131,7 +137,7 @@
           <div class="card-body">
             <h3 class="card-title">Miniature Figures</h3>
             <p class="card-text">Bring your layout to life with people and animals.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">Shop Scenery</a></div>
+            <div class="card-footer"><a href="services-details.html?service=figures" class="btn btn-outline">Shop Scenery</a></div>
           </div>
         </div>
         <div class="card">
@@ -139,7 +145,7 @@
           <div class="card-body">
             <h3 class="card-title">Bridges & Tunnels</h3>
             <p class="card-text">Add verticality to your track plan.</p>
-            <div class="card-footer"><a href="services-details.html" class="btn btn-outline">Shop Scenery</a></div>
+            <div class="card-footer"><a href="services-details.html?service=bridges" class="btn btn-outline">Shop Scenery</a></div>
           </div>
         </div>
       </div>
@@ -167,28 +173,39 @@
     </div>
   </section>
 
-  <!-- Section 4: Custom Layout Design -->
+  <!-- Section 4: How It Works (Process) -->
   <section class="section section-bg">
     <div class="container">
-      <div class="info-section" style="flex-direction: row-reverse;">
-        <div class="info-content">
-          <h2 class="section-title">Custom Layout Design</h2>
-          <p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Don't know where to start? Let us design a track plan that fits your space perfectly. We use CAD software to ensure every curve and switch fits flawlessly.</p>
-          <a href="contact.html" class="btn btn-outline">Start Planning</a>
+      <div class="text-center">
+        <h2 class="section-title">How Our Repair Process Works</h2>
+        <p class="section-subtitle">Get your locomotives back on track in three simple steps.</p>
+      </div>
+      
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; margin-top: 4rem; position: relative; flex-wrap: wrap;">
+        <!-- Connecting Line (hidden on small screens via z-index/layout, visible on desktop) -->
+        <div style="position: absolute; top: 30px; left: 15%; right: 15%; height: 2px; background: var(--border); z-index: 1;"></div>
+        
+        <!-- Step 1 -->
+        <div style="flex: 1; min-width: 250px; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem; box-shadow: 0 0 0 10px var(--bg-surface);">1</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Drop Off or Ship</h3>
+          <p style="color: var(--text-light); font-size: 0.95rem;">Bring your items to our store or securely ship them to our service center.</p>
         </div>
-        <div class="info-image">
-          <img src="assets/images/about_img.png" alt="Layout Design" style="width:100%; display:block;">
+        
+        <!-- Step 2 -->
+        <div style="flex: 1; min-width: 250px; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem; box-shadow: 0 0 0 10px var(--bg-surface);">2</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Diagnosis & Quote</h3>
+          <p style="color: var(--text-light); font-size: 0.95rem;">Our experts inspect the item and provide a transparent repair estimate.</p>
+        </div>
+        
+        <!-- Step 3 -->
+        <div style="flex: 1; min-width: 250px; text-align: center; position: relative; z-index: 2;">
+          <div style="width: 60px; height: 60px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin: 0 auto 1.5rem; box-shadow: 0 0 0 10px var(--bg-surface);">3</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Expert Repair</h3>
+          <p style="color: var(--text-light); font-size: 0.95rem;">We fix the issue, test thoroughly, and return your pristine model.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Section 5: Used Equipment Consignment -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="section-title" style="margin-bottom: 1.5rem;">Sell Us Your Old Trains</h2>
-      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">We offer competitive prices for used collections and estate sales. Turn unused gear into store credit or cash.</p>
-      <a href="contact.html" class="btn btn-primary" style="background-color: #fff; color: var(--primary);">Contact Buying Team</a>
     </div>
   </section>
 
@@ -204,7 +221,7 @@
           <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
           <div class="social-links" style="margin-top: 1.5rem;">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Model Railroad & Hobbyist Supply Store</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
       </button>
 
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
         <li><a href="home-2.html" class="nav-link">Home 2</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
@@ -35,10 +36,12 @@
             <i class="fas fa-moon"></i>
           </button>
           <button class="rtl-toggle" aria-label="Toggle RTL">
-            <i class="fas fa-language"></i>
+            <i class="fas fa-exchange-alt"></i>
           </button>
+          <a href="cart.html" class="cart-toggle" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           <a href="login.html" class="btn btn-outline">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -49,10 +52,10 @@
     <img src="assets/images/hero_image.png" alt="Model Railroad Hero" class="hero-bg">
     <div class="hero-overlay"></div>
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content text-center" style="margin: 0 auto;">
         <h1 class="hero-title">Build Your Dream Layout</h1>
         <p class="hero-desc">Discover the finest selection of model trains, scenic materials, and hobbyist tools. Your journey into the miniature world starts here.</p>
-        <div class="hero-actions">
+        <div class="hero-actions" style="justify-content: center;">
           <a href="services.html" class="btn btn-primary">Shop Now</a>
           <a href="about.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Learn More</a>
         </div>
@@ -76,7 +79,7 @@
           <div class="card-body">
             <h3 class="card-title">Locomotives</h3>
             <p class="card-text">From steam to modern diesel engines.</p>
-            <div class="card-footer">
+            <div class="card-footer" style="justify-content: center;">
               <a href="services.html" class="btn btn-outline">Browse</a>
             </div>
           </div>
@@ -89,7 +92,7 @@
           <div class="card-body">
             <h3 class="card-title">Rolling Stock</h3>
             <p class="card-text">Freight cars, passenger coaches, and more.</p>
-            <div class="card-footer">
+            <div class="card-footer" style="justify-content: center;">
               <a href="services.html" class="btn btn-outline">Browse</a>
             </div>
           </div>
@@ -102,7 +105,7 @@
           <div class="card-body">
             <h3 class="card-title">Scenery & Tracks</h3>
             <p class="card-text">Build realistic landscapes and layouts.</p>
-            <div class="card-footer">
+            <div class="card-footer" style="justify-content: center;">
               <a href="services.html" class="btn btn-outline">Browse</a>
             </div>
           </div>
@@ -115,7 +118,7 @@
           <div class="card-body">
             <h3 class="card-title">Tools & Supplies</h3>
             <p class="card-text">Everything you need to build and maintain.</p>
-            <div class="card-footer">
+            <div class="card-footer" style="justify-content: center;">
               <a href="services.html" class="btn btn-outline">Browse</a>
             </div>
           </div>
@@ -142,7 +145,7 @@
             <p class="card-text">Complete starter set with high-speed locomotive.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$149.99</span>
-              <a href="services-details.html" class="btn btn-primary">Add to Cart</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -156,7 +159,7 @@
             <p class="card-text">Highly detailed HO scale freight locomotive.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$89.99</span>
-              <a href="services-details.html" class="btn btn-primary">Add to Cart</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -170,7 +173,7 @@
             <p class="card-text">Snap-together bridge kit for O scale layouts.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$34.50</span>
-              <a href="services-details.html" class="btn btn-primary">Add to Cart</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -184,7 +187,7 @@
             <p class="card-text">Pack of 20 realistic miniature pine trees.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$12.99</span>
-              <a href="services-details.html" class="btn btn-primary">Add to Cart</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
             </div>
           </div>
         </div>
@@ -324,7 +327,7 @@
           <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
           <div class="social-links" style="margin-top: 1.5rem;">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>

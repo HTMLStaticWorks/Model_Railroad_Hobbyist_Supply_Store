@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Premium - Model Railroad & Hobbyist Supply Store</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Home 2 - Model Railroad & Hobbyist Supply Store</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .hero-premium {
@@ -27,29 +28,6 @@
     .hero-premium .hero-actions {
       justify-content: center;
     }
-    .stats-container {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      margin-top: 4rem;
-      border-top: 1px solid rgba(255,255,255,0.2);
-      padding-top: 2rem;
-    }
-    .stat-item {
-      text-align: center;
-    }
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--secondary);
-      font-family: var(--font-heading);
-    }
-    .stat-text {
-      color: #e5e7eb;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
   </style>
 </head>
 <body>
@@ -68,7 +46,7 @@
 
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="home-2.html" class="nav-link" style="color: var(--primary)">Home 2</a></li>
+        <li><a href="home-2.html" class="nav-link active">Home 2</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="services.html" class="nav-link">Services</a></li>
         <li><a href="blog.html" class="nav-link">Blog</a></li>
@@ -80,10 +58,12 @@
             <i class="fas fa-moon"></i>
           </button>
           <button class="rtl-toggle" aria-label="Toggle RTL">
-            <i class="fas fa-language"></i>
+            <i class="fas fa-exchange-alt"></i>
           </button>
+          <a href="cart.html" class="cart-toggle" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           <a href="login.html" class="btn btn-outline">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -102,20 +82,6 @@
           <a href="home-2.html#gallery" class="btn btn-outline" style="color:#fff; border-color:#fff;">View Gallery</a>
         </div>
         
-        <div class="stats-container">
-          <div class="stat-item">
-            <div class="stat-number">5K+</div>
-            <div class="stat-text">Products</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">120</div>
-            <div class="stat-text">Brands</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">10K+</div>
-            <div class="stat-text">Members</div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -131,42 +97,42 @@
       <div class="grid-6">
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/layout_1.png" alt="Gallery" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Urban Industrial</h3>
             <div class="card-footer"><a href="#" class="btn btn-outline" style="width:100%">View Details</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/layout_2.png" alt="Gallery" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Mountain Pass</h3>
             <div class="card-footer"><a href="#" class="btn btn-outline" style="width:100%">View Details</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/train_1.png" alt="Gallery" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Vintage Depot</h3>
             <div class="card-footer"><a href="#" class="btn btn-outline" style="width:100%">View Details</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/miniature_1.png" alt="Gallery" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Busy Platform</h3>
             <div class="card-footer"><a href="#" class="btn btn-outline" style="width:100%">View Details</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/miniature_2.png" alt="Gallery" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Forest Logging</h3>
             <div class="card-footer"><a href="#" class="btn btn-outline" style="width:100%">View Details</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/train_4.png" alt="Gallery" class="card-img"></div>
-          <div class="card-body">
+          <div class="card-body text-center">
             <h3 class="card-title">Night Express</h3>
             <div class="card-footer"><a href="#" class="btn btn-outline" style="width:100%">View Details</a></div>
           </div>
@@ -192,7 +158,7 @@
             <p class="card-text">Exact 1:87 scale, DCC ready.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$299.00</span>
-              <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</button>
+              <a href="cart.html" onclick="localStorage.setItem('cartImg', 'train_2.png'); localStorage.setItem('cartTitle', 'Bullet Train Replica'); localStorage.setItem('cartPrice', '299.00');" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</a>
             </div>
           </div>
         </div>
@@ -203,7 +169,7 @@
             <p class="card-text">Weathered finish, sounds included.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$349.00</span>
-              <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</button>
+              <a href="cart.html" onclick="localStorage.setItem('cartImg', 'train_3.png'); localStorage.setItem('cartTitle', 'Heritage Diesel'); localStorage.setItem('cartPrice', '349.00');" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</a>
             </div>
           </div>
         </div>
@@ -214,7 +180,7 @@
             <p class="card-text">Collector's edition, limited run.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$899.00</span>
-              <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</button>
+              <a href="cart.html" onclick="localStorage.setItem('cartImg', 'train_1.png'); localStorage.setItem('cartTitle', 'Brass Steam Loco'); localStorage.setItem('cartPrice', '899.00');" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</a>
             </div>
           </div>
         </div>
@@ -225,7 +191,7 @@
             <p class="card-text">Set of 4 illuminated cars.</p>
             <div class="card-footer">
               <span class="text-primary font-bold">$189.00</span>
-              <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</button>
+              <a href="cart.html" onclick="localStorage.setItem('cartImg', 'train_4.png'); localStorage.setItem('cartTitle', 'Luxury Coach Set'); localStorage.setItem('cartPrice', '189.00');" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add</a>
             </div>
           </div>
         </div>
@@ -299,14 +265,14 @@
     </div>
   </section>
 
-  <!-- Section 5: Unique Design Section -->
-  <section class="section" style="background: var(--footer-bg); color: #fff;">
-    <div class="container text-center" style="padding: 4rem 0;">
-      <h2 style="font-size: 3rem; margin-bottom: 1rem; color: #fff;">Ready to Start Your Next Project?</h2>
-      <p style="font-size: 1.25rem; color: var(--footer-text); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Join thousands of satisfied hobbyists who trust ModelRail for their modeling needs.</p>
-      <div style="display: flex; justify-content: center; gap: 1rem;">
-        <a href="register.html" class="btn btn-primary" style="padding: 1rem 2rem;">Create Account</a>
-        <a href="services.html" class="btn btn-outline" style="color: #fff; border-color: #fff; padding: 1rem 2rem;">Browse Store</a>
+  <!-- Section 5: Unique Design Section (CTA) -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">Ready to Start Your Next Project?</h2>
+      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Join thousands of satisfied hobbyists who trust ModelRail for their modeling needs.</p>
+      <div class="cta-actions" style="display: flex; justify-content: center; gap: 1rem;">
+        <a href="register.html" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Create Account</a>
+        <a href="services.html" class="btn btn-outline" style="font-size: 1.125rem; padding: 1rem 2rem; background: transparent; color: #fff; border-color: #fff;">Browse Store</a>
       </div>
     </div>
   </section>
@@ -323,7 +289,7 @@
           <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
           <div class="social-links" style="margin-top: 1.5rem;">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>

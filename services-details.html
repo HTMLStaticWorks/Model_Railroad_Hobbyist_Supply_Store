@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Service Details - Model Railroad & Hobbyist Supply Store</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .page-header {
-      padding: 10rem 0 5rem;
-      background: var(--bg-surface);
+      padding: 13rem 0 8rem;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/service-details.png') center/cover no-repeat;
       text-align: center;
       border-bottom: 1px solid var(--border);
     }
@@ -19,6 +20,12 @@
       width: 100%;
       height: 400px;
       object-fit: cover;
+    }
+    .card-footer {
+      justify-content: center;
+    }
+    .card-body {
+      text-align: center;
     }
   </style>
 </head>
@@ -40,7 +47,7 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="home-2.html" class="nav-link">Home 2</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="services.html" class="nav-link" style="color: var(--primary)">Services</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
         <li><a href="blog.html" class="nav-link">Blog</a></li>
         <li><a href="pricing.html" class="nav-link">Pricing</a></li>
         <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -50,10 +57,12 @@
             <i class="fas fa-moon"></i>
           </button>
           <button class="rtl-toggle" aria-label="Toggle RTL">
-            <i class="fas fa-language"></i>
+            <i class="fas fa-exchange-alt"></i>
           </button>
+          <a href="cart.html" class="cart-toggle" aria-label="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           <a href="login.html" class="btn btn-outline">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </li>
       </ul>
     </div>
@@ -62,8 +71,8 @@
   <!-- Page Header -->
   <header class="page-header">
     <div class="container">
-      <h1 class="hero-title" style="color: var(--text-dark);">DCC Installation & Programming</h1>
-      <p class="section-subtitle">Upgrade your fleet with modern digital control.</p>
+      <h1 class="hero-title" style="color: #ffffff;" id="service-title">DCC Installation & Programming</h1>
+      <p class="section-subtitle" style="color: #e2e8f0;" id="service-subtitle">Upgrade your fleet with modern digital control.</p>
     </div>
   </header>
 
@@ -72,12 +81,14 @@
     <div class="container">
       <div class="info-section">
         <div class="info-content">
-          <h2 class="section-title">What is DCC?</h2>
-          <p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Digital Command Control (DCC) is a standard for a system to operate model railways digitally. When equipped with DCC, locomotives on the same electrical section of track can be independently controlled.</p>
-          <p style="color:var(--text-light);">We provide professional installation of DCC decoders, including sound decoders, into almost any scale locomotive.</p>
+          <h2 class="section-title" id="overview-title">What is DCC?</h2>
+          <div id="overview-text">
+            <p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Digital Command Control (DCC) is a standard for a system to operate model railways digitally. When equipped with DCC, locomotives on the same electrical section of track can be independently controlled.</p>
+            <p style="color:var(--text-light);">We provide professional installation of DCC decoders, including sound decoders, into almost any scale locomotive.</p>
+          </div>
         </div>
         <div class="info-image">
-          <img src="assets/images/tools_1.png" alt="DCC Installation" style="width:100%; display:block;">
+          <img src="assets/images/tools_1.png" alt="DCC Installation" style="width:100%; display:block;" id="service-image">
         </div>
       </div>
     </div>
@@ -145,42 +156,35 @@
           <div class="card-img-wrap"><img src="assets/images/tools_2.png" alt="Painting" class="card-img"></div>
           <div class="card-body">
             <h3 class="card-title">Custom Painting</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Learn More</a></div>
+            <div class="card-footer"><a href="services-details.html?service=painting" class="btn btn-outline">Learn More</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/layout_1.png" alt="Weathering" class="card-img"></div>
           <div class="card-body">
             <h3 class="card-title">Weathering</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Learn More</a></div>
+            <div class="card-footer"><a href="services-details.html?service=weathering" class="btn btn-outline">Learn More</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/train_1.png" alt="Tune up" class="card-img"></div>
           <div class="card-body">
             <h3 class="card-title">Locomotive Tune-up</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Learn More</a></div>
+            <div class="card-footer"><a href="services-details.html?service=tuneup" class="btn btn-outline">Learn More</a></div>
           </div>
         </div>
         <div class="card">
           <div class="card-img-wrap"><img src="assets/images/layout_2.png" alt="Track laying" class="card-img"></div>
           <div class="card-body">
             <h3 class="card-title">Track Laying</h3>
-            <div class="card-footer"><a href="#" class="btn btn-outline">Learn More</a></div>
+            <div class="card-footer"><a href="services-details.html?service=track" class="btn btn-outline">Learn More</a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 5: CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2 class="section-title" style="margin-bottom: 1.5rem;">Book Your Installation</h2>
-      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Contact our service department to schedule your locomotive for an upgrade.</p>
-      <a href="contact.html" class="btn btn-primary" style="background-color: #fff; color: var(--primary);">Contact Us</a>
-    </div>
-  </section>
+
 
   <!-- Footer -->
   <footer class="footer">
@@ -194,7 +198,7 @@
           <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
           <div class="social-links" style="margin-top: 1.5rem;">
             <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
           </div>
@@ -237,5 +241,108 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    const serviceData = {
+      'steam': {
+        title: 'Steam Locomotives',
+        subtitle: 'Classic steam power for vintage layouts.',
+        overviewTitle: 'Discover Our Steam Locomotives',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Step back in time with our highly detailed steam locomotives. Each model is crafted with precision to capture the elegance and raw power of the steam era.</p><p style="color:var(--text-light);">We offer models with real synchronized smoke, authentic sound, and meticulously painted details suitable for both collectors and active layout builders.</p>',
+        image: 'assets/images/train_1.png'
+      },
+      'electric': {
+        title: 'Electric Trains',
+        subtitle: 'Modern high-speed electric locomotives.',
+        overviewTitle: 'High-Speed Electric Models',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Experience the future of rail with our electric train models. From sleek high-speed passenger trains to powerful electric freight haulers.</p><p style="color:var(--text-light);">Our electric models feature functioning pantographs, brilliant directional lighting, and state-of-the-art DCC capabilities.</p>',
+        image: 'assets/images/train_2.png'
+      },
+      'diesel': {
+        title: 'Diesel Freights',
+        subtitle: 'Heavy duty hauling power.',
+        overviewTitle: 'Reliable Diesel Locomotives',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Build your modern freight operations with our rugged diesel locomotives. Built for pulling long consists up steep grades on your layout.</p><p style="color:var(--text-light);">Available in a wide variety of road names and eras, fully equipped with roaring diesel sound profiles.</p>',
+        image: 'assets/images/train_3.png'
+      },
+      'passenger': {
+        title: 'Passenger Coaches',
+        subtitle: 'Illuminated and detailed coach cars.',
+        overviewTitle: 'Luxury Passenger Travel',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Complete your consist with our stunningly detailed passenger coaches. Each car features full interior detailing and seated passenger figures.</p><p style="color:var(--text-light);">With flicker-free LED interior lighting, these cars look incredible rolling down the track during night operations.</p>',
+        image: 'assets/images/train_4.png'
+      },
+      'buildings': {
+        title: 'Buildings & Structures',
+        subtitle: 'Kits and pre-assembled buildings.',
+        overviewTitle: 'Create Your Town',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">From bustling city centers to quiet country stations, our buildings provide the context your trains need. Choose between challenging kits or ready-made structures.</p><p style="color:var(--text-light);">All structures are scaled perfectly and molded with high-quality styrene or laser-cut wood.</p>',
+        image: 'assets/images/layout_1.png'
+      },
+      'trees': {
+        title: 'Trees & Foliage',
+        subtitle: 'Realistic trees, bushes, and grass.',
+        overviewTitle: 'Bring Nature Indoors',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">A layout isn\'t complete without realistic nature. Our foliage products include wire-armature trees, static grass, and realistic ground foam.</p><p style="color:var(--text-light);">Whether you are modeling an autumn forest or a desert scene, we have the materials you need.</p>',
+        image: 'assets/images/miniature_2.png'
+      },
+      'figures': {
+        title: 'Miniature Figures',
+        subtitle: 'Bring your layout to life with people and animals.',
+        overviewTitle: 'Populate Your World',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">It\'s the little details that matter. Adding miniature figures to platforms, streets, and houses adds immeasurable life to your diorama.</p><p style="color:var(--text-light);">We carry hand-painted figures ranging from railway workers to farm animals and city pedestrians.</p>',
+        image: 'assets/images/miniature_1.png'
+      },
+      'bridges': {
+        title: 'Bridges & Tunnels',
+        subtitle: 'Add verticality to your track plan.',
+        overviewTitle: 'Engineering Marvels',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Bridges and tunnels are often the focal point of a model railroad. We offer stunning truss bridges, plate girders, and realistic tunnel portals.</p><p style="color:var(--text-light);">Constructed from sturdy materials to support your heaviest brass locomotives.</p>',
+        image: 'assets/images/layout_2.png'
+      },
+      'painting': {
+        title: 'Custom Painting',
+        subtitle: 'Professional painting for unique layouts.',
+        overviewTitle: 'Bring Your Vision to Life',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">We offer custom painting services for any locomotive or rolling stock. Match a specific prototype or create your own custom railroad scheme.</p>',
+        image: 'assets/images/tools_2.png'
+      },
+      'weathering': {
+        title: 'Weathering',
+        subtitle: 'Realistic weathering for trains and buildings.',
+        overviewTitle: 'Add Years of Realism',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Factory fresh isn\'t always realistic. We apply custom airbrush and chalk weathering to give your equipment that hardworking, everyday look.</p>',
+        image: 'assets/images/layout_1.png'
+      },
+      'tuneup': {
+        title: 'Locomotive Tune-up',
+        subtitle: 'Routine maintenance and deep cleaning.',
+        overviewTitle: 'Keep Trains Running Smoothly',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Our tune-up service includes wheel cleaning, gear lubrication, and motor inspection to ensure your favorite locomotives run like new.</p>',
+        image: 'assets/images/train_1.png'
+      },
+      'track': {
+        title: 'Track Laying',
+        subtitle: 'Professional track planning and installation.',
+        overviewTitle: 'Build a Solid Foundation',
+        overviewText: '<p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">A layout is only as good as its trackwork. We offer professional track laying services including soldering, switch installation, and ballasting.</p>',
+        image: 'assets/images/layout_2.png'
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceId = urlParams.get('service');
+      
+      if (serviceId && serviceData[serviceId]) {
+        const data = serviceData[serviceId];
+        document.getElementById('service-title').textContent = data.title;
+        document.getElementById('service-subtitle').textContent = data.subtitle;
+        document.getElementById('overview-title').textContent = data.overviewTitle;
+        document.getElementById('overview-text').innerHTML = data.overviewText;
+        document.getElementById('service-image').src = data.image;
+        document.getElementById('service-image').alt = data.title;
+      }
+    });
+  </script>
 </body>
 </html>
