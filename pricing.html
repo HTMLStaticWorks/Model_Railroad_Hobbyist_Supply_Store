@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing & Membership - Model Railroad & Hobbyist Supply Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-header {
+      padding: 10rem 0 5rem;
+      background: var(--bg-surface);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .pricing-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2rem;
+      text-align: center;
+      background: var(--bg-surface);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .pricing-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+    }
+    .pricing-card.popular {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+    }
+    .popular-badge {
+      position: absolute;
+      top: 1rem;
+      right: -2rem;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.25rem 3rem;
+      transform: rotate(45deg);
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .price {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin: 1.5rem 0;
+    }
+    .price span {
+      font-size: 1rem;
+      color: var(--text-light);
+      font-weight: 400;
+    }
+    .pricing-features {
+      margin: 2rem 0;
+      text-align: left;
+    }
+    .pricing-features li {
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+    .pricing-features li i {
+      color: var(--primary);
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-train"></i>
+        <span>ModelRail</span>
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="pricing.html" class="nav-link" style="color: var(--primary)">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        
+        <li class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-language"></i>
+          </button>
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="hero-title" style="color: var(--text-dark);">Club Membership</h1>
+      <p class="section-subtitle">Join our community and unlock exclusive benefits.</p>
+    </div>
+  </header>
+
+  <!-- Section 1: Pricing Cards (Grid 3 wait user said 4 or 6 for cards? "ONLY EVEN NUMBER CARDS -> STRICTLY 4 or 6". I'll make 4 pricing tiers) -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-4">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <h3 class="card-title">Enthusiast</h3>
+          <div class="price">$9<span>/mo</span></div>
+          <p class="card-text" style="margin-bottom: 2rem;">For beginners just starting out.</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Monthly newsletter</li>
+            <li><i class="fas fa-check"></i> 5% off store purchases</li>
+            <li><i class="fas fa-times" style="color: #ccc;"></i> Workshop access</li>
+            <li><i class="fas fa-times" style="color: #ccc;"></i> VIP events</li>
+          </ul>
+          <a href="register.html" class="btn btn-outline" style="width: 100%;">Join Now</a>
+        </div>
+        
+        <!-- Tier 2 -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">POPULAR</div>
+          <h3 class="card-title">Conductor</h3>
+          <div class="price">$19<span>/mo</span></div>
+          <p class="card-text" style="margin-bottom: 2rem;">For active hobbyists.</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Monthly newsletter</li>
+            <li><i class="fas fa-check"></i> 10% off store purchases</li>
+            <li><i class="fas fa-check"></i> Free online workshops</li>
+            <li><i class="fas fa-times" style="color: #ccc;"></i> VIP events</li>
+          </ul>
+          <a href="register.html" class="btn btn-primary" style="width: 100%;">Join Now</a>
+        </div>
+        
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <h3 class="card-title">Engineer</h3>
+          <div class="price">$39<span>/mo</span></div>
+          <p class="card-text" style="margin-bottom: 2rem;">For serious modelers.</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Everything in Conductor</li>
+            <li><i class="fas fa-check"></i> 15% off store purchases</li>
+            <li><i class="fas fa-check"></i> In-store workshop access</li>
+            <li><i class="fas fa-check"></i> Priority repair service</li>
+          </ul>
+          <a href="register.html" class="btn btn-outline" style="width: 100%;">Join Now</a>
+        </div>
+
+        <!-- Tier 4 -->
+        <div class="pricing-card">
+          <h3 class="card-title">Trainmaster</h3>
+          <div class="price">$99<span>/yr</span></div>
+          <p class="card-text" style="margin-bottom: 2rem;">Annual ultimate pass.</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> All Engineer benefits</li>
+            <li><i class="fas fa-check"></i> 20% off all pre-orders</li>
+            <li><i class="fas fa-check"></i> VIP layout tour invites</li>
+            <li><i class="fas fa-check"></i> Free shipping</li>
+          </ul>
+          <a href="register.html" class="btn btn-outline" style="width: 100%;">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Benefits List -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="info-section">
+        <div class="info-image">
+          <img src="assets/images/train_4.png" alt="Benefits" style="width:100%; display:block;">
+        </div>
+        <div class="info-content">
+          <h2 class="section-title">Why Join The Club?</h2>
+          <p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Membership isn't just about discounts—it's about becoming part of a community. Share tips, trade equipment, and get inspired by fellow enthusiasts.</p>
+          <ul style="margin-bottom: 2rem; color:var(--text-light); padding-left: 1.5rem; list-style-type: disc;">
+            <li style="margin-bottom: 0.5rem;">Access to rare and out-of-production items first.</li>
+            <li style="margin-bottom: 0.5rem;">Connect with master builders.</li>
+            <li style="margin-bottom: 0.5rem;">Showcase your layout in our annual magazine.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Testimonials (Grid 4) -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">What Members Say</h2>
+      </div>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="card" style="padding: 2rem;">
+          <div style="color: var(--secondary); margin-bottom: 1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="card-text">"The discount pays for itself, but the workshops are the real value. I learned so much!"</p>
+          <h4 style="margin:0;">- Mark T.</h4>
+        </div>
+        <div class="card" style="padding: 2rem;">
+          <div style="color: var(--secondary); margin-bottom: 1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="card-text">"Great community. I found parts for my vintage steam engine through a club trade."</p>
+          <h4 style="margin:0;">- Lisa R.</h4>
+        </div>
+        <div class="card" style="padding: 2rem;">
+          <div style="color: var(--secondary); margin-bottom: 1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="card-text">"The Trainmaster yearly pass is fantastic. Free shipping saves me a ton!"</p>
+          <h4 style="margin:0;">- David W.</h4>
+        </div>
+        <div class="card" style="padding: 2rem;">
+          <div style="color: var(--secondary); margin-bottom: 1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="card-text">"Absolutely love the VIP events. Getting to see the huge private layouts is amazing."</p>
+          <h4 style="margin:0;">- Sarah M.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: FAQ -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div style="max-width: 800px; margin: 2rem auto 0;">
+        <div style="background: var(--bg-surface); padding: 1.5rem; margin-bottom: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem;">Can I cancel anytime?</h3>
+          <p style="color: var(--text-light); margin:0;">Yes, our monthly plans are month-to-month and can be canceled at any time.</p>
+        </div>
+        <div style="background: var(--bg-surface); padding: 1.5rem; margin-bottom: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem;">Do discounts apply to sale items?</h3>
+          <p style="color: var(--text-light); margin:0;">Membership discounts usually stack with regular sales unless otherwise stated.</p>
+        </div>
+        <div style="background: var(--bg-surface); padding: 1.5rem; margin-bottom: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+          <h3 style="margin-bottom: 0.5rem;">How do I access workshops?</h3>
+          <p style="color: var(--text-light); margin:0;">Online workshops are accessible via our member portal. In-store workshops require reserving a spot.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Unique CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">Corporate & Club Accounts</h2>
+      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Are you buying for a local model railroad club or museum? We offer special wholesale pricing.</p>
+      <a href="contact.html" class="btn btn-primary" style="background-color: #fff; color: var(--primary);">Contact Sales</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+            <i class="fas fa-train"></i>
+            <span>ModelRail</span>
+          </a>
+          <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
+          <div class="social-links" style="margin-top: 1.5rem;">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Features</h3>
+          <ul class="footer-links">
+            <li><a href="services-details.html">Scale Guide</a></li>
+            <li><a href="home-2.html">Layout Gallery</a></li>
+            <li><a href="blog.html">Workshop Schedules</a></li>
+            <li><a href="pricing.html">Club Membership</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Hobby Lane, Train City, TC 12345</li>
+            <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@modelrail.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Model Railroad & Hobbyist Supply Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

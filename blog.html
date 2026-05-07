@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Model Railroad & Hobbyist Supply Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-header {
+      padding: 10rem 0 5rem;
+      background: var(--bg-surface);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-train"></i>
+        <span>ModelRail</span>
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link" style="color: var(--primary)">Blog</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        
+        <li class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-language"></i>
+          </button>
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="hero-title" style="color: var(--text-dark);">Hobbyist Blog</h1>
+      <p class="section-subtitle">Tips, tutorials, and news from the model railroading world.</p>
+    </div>
+  </header>
+
+  <!-- Section 1: Featured Post -->
+  <section class="section">
+    <div class="container">
+      <div class="info-section">
+        <div class="info-image">
+          <img src="assets/images/hero_image.png" alt="Featured Post" style="width:100%; display:block;">
+        </div>
+        <div class="info-content">
+          <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.875rem;">Featured</span>
+          <h2 class="section-title" style="margin-top: 0.5rem; font-size: 2rem;">Creating Realistic Water Features for Your Layout</h2>
+          <p style="margin-top:1rem; margin-bottom:1rem; color:var(--text-light);">Learn the secrets to pouring epoxy resin for rivers and lakes, creating ripples, and blending the shoreline into your existing scenery.</p>
+          <a href="blog-details.html" class="btn btn-primary">Read Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Latest Posts (Grid 4) -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Latest Articles</h2>
+      </div>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/train_2.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <span style="color: var(--text-light); font-size: 0.875rem;">Oct 12, 2026</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Review: New Bullet Train Models</h3>
+            <p class="card-text">We test the latest high-speed N scale models for performance and detail.</p>
+            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/miniature_2.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <span style="color: var(--text-light); font-size: 0.875rem;">Oct 05, 2026</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">DIY Pine Trees on a Budget</h3>
+            <p class="card-text">Make your own realistic pine trees using wire, twine, and flocking.</p>
+            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/tools_2.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <span style="color: var(--text-light); font-size: 0.875rem;">Sep 28, 2026</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Airbrushing Basics Part 1</h3>
+            <p class="card-text">Getting started with weathering your rolling stock.</p>
+            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/layout_2.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <span style="color: var(--text-light); font-size: 0.875rem;">Sep 20, 2026</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Bridge Building Kit Bash</h3>
+            <p class="card-text">Combining two kits to create a massive river crossing.</p>
+            <div class="card-footer"><a href="blog-details.html" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Categories (Grid 4) -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Explore by Category</h2>
+      </div>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <a href="#" class="card" style="align-items: center; justify-content: center; padding: 2rem;">
+          <i class="fas fa-tools" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3 class="card-title">Tutorials</h3>
+        </a>
+        <a href="#" class="card" style="align-items: center; justify-content: center; padding: 2rem;">
+          <i class="fas fa-star" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3 class="card-title">Reviews</h3>
+        </a>
+        <a href="#" class="card" style="align-items: center; justify-content: center; padding: 2rem;">
+          <i class="fas fa-images" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3 class="card-title">Gallery</h3>
+        </a>
+        <a href="#" class="card" style="align-items: center; justify-content: center; padding: 2rem;">
+          <i class="fas fa-bullhorn" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
+          <h3 class="card-title">News</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Newsletter -->
+  <section class="section section-bg">
+    <div class="container text-center">
+      <h2 class="section-title">Subscribe to our Newsletter</h2>
+      <p style="margin-bottom: 2rem; color: var(--text-light);">Get the latest tutorials and store news delivered to your inbox.</p>
+      <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem;">
+        <input type="email" class="form-control" placeholder="Your Email Address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Section 5: Unique Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">Submit Your Layout</h2>
+      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Want to see your hard work featured on our blog? Send us pictures and the story behind your model railroad!</p>
+      <a href="contact.html" class="btn btn-primary" style="background-color: #fff; color: var(--primary);">Submit Photos</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+            <i class="fas fa-train"></i>
+            <span>ModelRail</span>
+          </a>
+          <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
+          <div class="social-links" style="margin-top: 1.5rem;">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Features</h3>
+          <ul class="footer-links">
+            <li><a href="services-details.html">Scale Guide</a></li>
+            <li><a href="home-2.html">Layout Gallery</a></li>
+            <li><a href="blog.html">Workshop Schedules</a></li>
+            <li><a href="pricing.html">Club Membership</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Hobby Lane, Train City, TC 12345</li>
+            <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@modelrail.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Model Railroad & Hobbyist Supply Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

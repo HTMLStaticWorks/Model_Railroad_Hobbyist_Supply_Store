@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Model Railroad & Hobbyist Supply Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-header {
+      padding: 10rem 0 5rem;
+      background: var(--bg-surface);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-train"></i>
+        <span>ModelRail</span>
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link" style="color: var(--primary)">Contact</a></li>
+        
+        <li class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-language"></i>
+          </button>
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="hero-title" style="color: var(--text-dark);">Get in Touch</h1>
+      <p class="section-subtitle">We'd love to hear from you. Stop by the store or send us a message.</p>
+    </div>
+  </header>
+
+  <!-- Section 1: Contact Form & Info -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <!-- Contact Info -->
+        <div>
+          <h2 class="section-title">Contact Information</h2>
+          <p style="color: var(--text-light); margin-bottom: 2rem;">Whether you have a question about a product, need repair services, or want to discuss a custom layout, our team is ready to help.</p>
+          
+          <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(211,47,47,0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0 0 0.25rem;">Store Location</h4>
+              <p style="color: var(--text-light); margin: 0;">123 Hobby Lane<br>Train City, TC 12345</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(211,47,47,0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0 0 0.25rem;">Phone Number</h4>
+              <p style="color: var(--text-light); margin: 0;">(555) 123-4567</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 50px; height: 50px; background: rgba(211,47,47,0.1); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0 0 0.25rem;">Email Address</h4>
+              <p style="color: var(--text-light); margin: 0;">info@modelrail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--border);">
+          <form>
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Map -->
+  <section class="section section-bg" style="padding: 0;">
+    <div style="width: 100%; height: 400px; background: #e5e5e5; display: flex; align-items: center; justify-content: center; color: var(--text-light);">
+      <!-- Placeholder for Map -->
+      <div style="text-align: center;">
+        <i class="fas fa-map" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+        <h2>Interactive Map Area</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Store Hours -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Store Hours</h2>
+      </div>
+      <div style="max-width: 600px; margin: 2rem auto 0; background: var(--bg-surface); border-radius: var(--radius-lg); border: 1px solid var(--border); overflow: hidden;">
+        <div style="display: flex; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid var(--border);">
+          <strong>Monday - Friday</strong>
+          <span>10:00 AM - 8:00 PM</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid var(--border);">
+          <strong>Saturday</strong>
+          <span>9:00 AM - 6:00 PM</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 1rem 2rem;">
+          <strong>Sunday</strong>
+          <span>11:00 AM - 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Departments (Grid 4) -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Direct Contacts</h2>
+      </div>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 class="card-title">Sales Dept</h3>
+          <p class="card-text">sales@modelrail.com</p>
+          <a href="#" class="btn btn-outline">Email Sales</a>
+        </div>
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 class="card-title">Repairs</h3>
+          <p class="card-text">repair@modelrail.com</p>
+          <a href="#" class="btn btn-outline">Email Repairs</a>
+        </div>
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 class="card-title">Consignment</h3>
+          <p class="card-text">buy@modelrail.com</p>
+          <a href="#" class="btn btn-outline">Email Buyer</a>
+        </div>
+        <div class="card" style="text-align: center; padding: 2rem;">
+          <h3 class="card-title">Support</h3>
+          <p class="card-text">help@modelrail.com</p>
+          <a href="#" class="btn btn-outline">Email Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">Join Our Social Community</h2>
+      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Follow us on social media for daily updates, layout videos, and exclusive flash sales.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem;">
+        <a href="#" class="btn btn-primary" style="background-color: #fff; color: var(--primary);"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#" class="btn btn-primary" style="background-color: #fff; color: var(--primary);"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+            <i class="fas fa-train"></i>
+            <span>ModelRail</span>
+          </a>
+          <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
+          <div class="social-links" style="margin-top: 1.5rem;">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Features</h3>
+          <ul class="footer-links">
+            <li><a href="services-details.html">Scale Guide</a></li>
+            <li><a href="home-2.html">Layout Gallery</a></li>
+            <li><a href="blog.html">Workshop Schedules</a></li>
+            <li><a href="pricing.html">Club Membership</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Hobby Lane, Train City, TC 12345</li>
+            <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@modelrail.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Model Railroad & Hobbyist Supply Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

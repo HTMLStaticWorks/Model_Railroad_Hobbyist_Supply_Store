@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Details - Model Railroad & Hobbyist Supply Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .page-header {
+      padding: 10rem 0 5rem;
+      background: var(--bg-surface);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .article-content img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      margin: 2rem 0;
+    }
+    .article-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.125rem;
+      color: var(--text-light);
+    }
+    .article-content h3 {
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-train"></i>
+        <span>ModelRail</span>
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link" style="color: var(--primary)">Blog</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        
+        <li class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="rtl-toggle" aria-label="Toggle RTL">
+            <i class="fas fa-language"></i>
+          </button>
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <span style="color: var(--primary); font-weight: 600; text-transform: uppercase;">Tutorials</span>
+        <h1 class="hero-title" style="color: var(--text-dark); margin: 1rem 0; font-size: 3rem;">Creating Realistic Water Features</h1>
+        <p class="section-subtitle">By John Smith &bull; October 15, 2026</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Article Content -->
+  <section class="section">
+    <div class="container">
+      <div class="article-content">
+        <img src="assets/images/hero_image.png" alt="River Setup">
+        <p>Adding a water feature to your model railroad is one of the most effective ways to break up the landscape and add a level of realism that draws the viewer's eye. Whether it's a roaring river, a calm lake, or a small pond, the techniques remain largely the same.</p>
+        
+        <h3>1. Preparing the Base</h3>
+        <p>Before you even think about pouring resin, the base must be absolutely sealed. Even a pinhole will allow expensive epoxy to drain away onto your floor. We recommend using a layer of plaster cloth covered by a thick coat of latex paint.</p>
+
+        <img src="assets/images/layout_2.png" alt="Bridge over water">
+
+        <h3>2. Painting the Depth</h3>
+        <p>Water isn't just blue. It reflects the sky and the surrounding terrain. To create the illusion of depth, paint the center of your riverbed a dark blue-green or brown, and gradually lighten the color as you approach the banks. This simple trick adds tremendous realism once the clear resin is applied.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Author Bio -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="article-content" style="display: flex; gap: 2rem; align-items: center; background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+        <img src="https://ui-avatars.com/api/?name=John+Smith&background=d32f2f&color=fff&size=100" alt="Author" style="width: 100px; height: 100px; border-radius: 50%; margin: 0;">
+        <div>
+          <h3 style="margin-top: 0; margin-bottom: 0.5rem;">John Smith</h3>
+          <p style="margin: 0; font-size: 1rem;">Master Modeler with over 30 years of experience building award-winning layouts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Comments -->
+  <section class="section">
+    <div class="container">
+      <div class="article-content">
+        <h2>Leave a Comment</h2>
+        <form style="margin-top: 2rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+            <input type="text" class="form-control" placeholder="Name">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <textarea class="form-control" rows="5" placeholder="Your Comment" style="margin-bottom: 1rem;"></textarea>
+          <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Related Posts (Grid 4) -->
+  <section class="section section-bg">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">Related Articles</h2>
+      </div>
+      <div class="grid-4" style="margin-top: 2rem;">
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/miniature_2.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <h3 class="card-title">DIY Pine Trees</h3>
+            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/tools_2.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <h3 class="card-title">Airbrushing Basics</h3>
+            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/layout_1.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <h3 class="card-title">Building Cityscapes</h3>
+            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrap"><img src="assets/images/tools_1.png" alt="Blog" class="card-img"></div>
+          <div class="card-body">
+            <h3 class="card-title">Essential Tools Guide</h3>
+            <div class="card-footer"><a href="#" class="btn btn-outline">Read More</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Newsletter -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">Never Miss an Update</h2>
+      <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.125rem;">Subscribe to our newsletter for weekly tips.</p>
+      <form style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem;">
+        <input type="email" class="form-control" placeholder="Your Email Address" required style="border:none;">
+        <button type="submit" class="btn btn-primary" style="background-color: var(--nav-bg); color: var(--primary);">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+            <i class="fas fa-train"></i>
+            <span>ModelRail</span>
+          </a>
+          <p>Your one-stop destination for premium model railroad supplies, layouts, and hobbyist tools. Building dreams one scale at a time.</p>
+          <div class="social-links" style="margin-top: 1.5rem;">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-col">
+          <h3 class="footer-title">Features</h3>
+          <ul class="footer-links">
+            <li><a href="services-details.html">Scale Guide</a></li>
+            <li><a href="home-2.html">Layout Gallery</a></li>
+            <li><a href="blog.html">Workshop Schedules</a></li>
+            <li><a href="pricing.html">Club Membership</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Info</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Hobby Lane, Train City, TC 12345</li>
+            <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@modelrail.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Model Railroad & Hobbyist Supply Store. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
