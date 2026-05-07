@@ -109,4 +109,34 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
     observer.observe(el);
   });
+  // Scroll Controls Logic
+  const scrollControls = document.createElement('div');
+  scrollControls.className = 'scroll-controls';
+  scrollControls.innerHTML = `
+    <button class="scroll-btn scroll-up" aria-label="Scroll to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  `;
+  document.body.appendChild(scrollControls);
+
+  const scrollUpBtn = scrollControls.querySelector('.scroll-up');
+
+  const checkScroll = () => {
+    if (window.scrollY > 300) {
+      scrollUpBtn.classList.add('show');
+    } else {
+      scrollUpBtn.classList.remove('show');
+    }
+  };
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll();
+
+  scrollUpBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
+
