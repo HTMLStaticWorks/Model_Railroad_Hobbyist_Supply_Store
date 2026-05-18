@@ -44,11 +44,11 @@
       padding: 0.25rem 3rem;
       transform: rotate(45deg);
       font-size: 0.75rem;
-      font-weight: 700;
+      font-weight: 600;
     }
     .price {
       font-size: 3rem;
-      font-weight: 800;
+      font-weight: 600;
       color: var(--text-dark);
       margin: 1.5rem 0;
     }
@@ -165,7 +165,7 @@
   </header>
 
   <!-- Section 1: Pricing Cards (Grid 3 wait user said 4 or 6 for cards? "ONLY EVEN NUMBER CARDS -> STRICTLY 4 or 6". I'll make 4 pricing tiers) -->
-  <section class="section">
+  <section id="plans" class="section">
     <div class="container">
       <div class="grid-4">
         <!-- Tier 1 -->
@@ -232,17 +232,27 @@
   <section class="section section-bg">
     <div class="container">
       <div class="info-section">
-        <div class="info-image">
-          <img src="assets/images/train_4.png" alt="Benefits" style="width:100%; display:block;">
+        <div class="info-image" style="aspect-ratio: 4/3; max-height: 420px;">
+          <img src="assets/images/train_4.png" alt="Benefits" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="info-content">
           <h2 class="section-title">Why Join The Club?</h2>
-          <p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Membership isn't just about discountsâ€”it's about becoming part of a community. Share tips, trade equipment, and get inspired by fellow enthusiasts.</p>
-          <ul style="margin-bottom: 2rem; color:var(--text-light); padding-left: 1.5rem; list-style-type: disc;">
-            <li style="margin-bottom: 0.5rem;">Access to rare and out-of-production items first.</li>
-            <li style="margin-bottom: 0.5rem;">Connect with master builders.</li>
-            <li style="margin-bottom: 0.5rem;">Showcase your layout in our annual magazine.</li>
+          <p style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-light);">Membership isn't just about discounts — it's about becoming part of a community. Share tips, trade equipment, and get inspired by fellow enthusiasts.</p>
+          <ul style="margin-bottom: 2rem; color:var(--text-light); list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <i class="fas fa-check" style="color: var(--primary); margin-top: 0.25rem;"></i>
+              <span>Access to rare and out-of-production items first.</span>
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <i class="fas fa-check" style="color: var(--primary); margin-top: 0.25rem;"></i>
+              <span>Connect with master builders.</span>
+            </li>
+            <li style="margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 0.75rem;">
+              <i class="fas fa-check" style="color: var(--primary); margin-top: 0.25rem;"></i>
+              <span>Showcase your layout in our annual magazine.</span>
+            </li>
           </ul>
+          <a href="#plans" class="btn btn-primary">Choose Your Plan <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
         </div>
       </div>
     </div>
