@@ -9,7 +9,7 @@
   --bg-main: #f9fafb;
   --bg-surface: #ffffff;
   --border: #e5e7eb;
-  --nav-bg: rgba(255, 255, 255, 0.95);
+  --nav-bg: #ffffff;
   --footer-bg: #ffffff;
   --footer-text: #4b5563;
   
@@ -36,7 +36,7 @@
   --bg-main: #000000;
   --bg-surface: #0a0a0a;
   --border: #1a1a1a;
-  --nav-bg: rgba(0, 0, 0, 0.95);
+  --nav-bg: #000000;
   --footer-bg: #000000;
   --footer-text: #ffffff;
 }
@@ -187,11 +187,39 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  box-shadow: none;
+  transition: var(--transition);
+}
+
+.navbar.scrolled,
+.navbar.menu-open {
   background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
-  z-index: 1000;
   box-shadow: var(--shadow-sm);
-  transition: var(--transition);
+}
+
+/* Transparent Navbar Text Colors */
+.navbar:not(.scrolled):not(.menu-open) .logo span,
+.navbar:not(.scrolled):not(.menu-open) .nav-link,
+.navbar:not(.scrolled):not(.menu-open) .theme-toggle,
+.navbar:not(.scrolled):not(.menu-open) .rtl-toggle,
+.navbar:not(.scrolled):not(.menu-open) .mobile-toggle,
+.navbar:not(.scrolled):not(.menu-open) .cart-toggle {
+  color: #ffffff;
+}
+
+.navbar:not(.scrolled):not(.menu-open) .btn-outline {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar:not(.scrolled):not(.menu-open) .theme-toggle,
+.navbar:not(.scrolled):not(.menu-open) .rtl-toggle,
+.navbar:not(.scrolled):not(.menu-open) .mobile-toggle,
+.navbar:not(.scrolled):not(.menu-open) .cart-toggle {
+  background-color: transparent;
 }
 
 .nav-container {

@@ -2,10 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mobile Menu Toggle
   const mobileToggle = document.querySelector('.mobile-toggle');
   const navMenu = document.querySelector('.nav-menu');
+  const navbar = document.querySelector('.navbar');
   
   if (mobileToggle) {
     mobileToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
+      if (navbar) {
+        navbar.classList.toggle('menu-open');
+      }
       const icon = mobileToggle.querySelector('i');
       if (navMenu.classList.contains('active')) {
         icon.classList.remove('fa-bars');
@@ -122,6 +126,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollUpBtn = scrollControls.querySelector('.scroll-up');
 
   const checkScroll = () => {
+    if (window.scrollY > 50) {
+      if (navbar) navbar.classList.add('scrolled');
+    } else {
+      if (navbar) navbar.classList.remove('scrolled');
+    }
+
     if (window.scrollY > 300) {
       scrollUpBtn.classList.add('show');
     } else {
